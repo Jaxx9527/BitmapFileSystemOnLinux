@@ -9,9 +9,20 @@ Linux系統上基於Bitmap的檔案管理系统
 实现的基本的功能包括：新增、删除、重命名、读写、拷贝目录或文件。   
 另外还需完成初始化文件系统、显示目录内容功能。  
 
-## 運行环境
+## 運行環境
 Ubuntu 14.04 LTS  
 gcc version 4.8.4  
 编译标准：C99  
 
 ## 運行截圖
+```
+sudo su
+modprobe brd rd_nr=1 rd_size=640
+dd if=/dev/zero of=/dev/ram0 bs=512 count=1280
+```
+图2.2.1 创建及初始化ramdisk shell命令
+
+![图2.2.2创建及初始化ramdisk shell执行记录截图](https://raw.githubusercontent.com/Jaxx9527/BitmapFileSystemOnLinux/refs/heads/main/img/2.2.2.png)  
+ 图2.2.2创建及初始化ramdisk shell执行记录截图  
+本系统未自带ramdisk设备(/dev/ram)，使用图2.2.1命令创建及初始化ramdisk，运行结果如图2.2.2所示。
+
