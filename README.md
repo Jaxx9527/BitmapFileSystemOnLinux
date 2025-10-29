@@ -21,16 +21,28 @@ modprobe brd rd_nr=1 rd_size=640
 dd if=/dev/zero of=/dev/ram0 bs=512 count=1280
 ```
 图2.2.1 创建及初始化ramdisk shell命令
+<table >
+<tr>
+  <td><img width="100%" alt="image" src="https://raw.githubusercontent.com/Jaxx9527/BitmapFileSystemOnLinux/refs/heads/main/img/2.2.2.png" />
 
-![图2.2.2创建及初始化ramdisk shell执行记录截图](https://raw.githubusercontent.com/Jaxx9527/BitmapFileSystemOnLinux/refs/heads/main/img/2.2.2.png)  
- 图2.2.2创建及初始化ramdisk shell执行记录截图  
+</tr>
+  <tr>
+    <td align="center"> 	 图2.2.2创建及初始化ramdisk shell执行记录截图  
+  </td>
+  </tr>
+</table> 
 本系统未自带ramdisk设备(/dev/ram)，使用图2.2.1命令创建及初始化ramdisk，运行结果如图2.2.2所示。
 
+<table >
+<tr>
+  <td><img width="100%" alt="image" src="https://raw.githubusercontent.com/Jaxx9527/BitmapFileSystemOnLinux/refs/heads/main/img/2.3.png" />
 
-![图2.3 实现格式化截图](https://raw.githubusercontent.com/Jaxx9527/BitmapFileSystemOnLinux/refs/heads/main/img/2.3.png)  
-图2.3 实现格式化截图  
+</tr>
+  <tr>
+    <td align="center"> 	 图2.3 实现格式化截图   </td>
+  </tr>
+</table>   
 图2.3展示了，ramdisk内原本有内容，执行格式化后，内容被清除。  
-
 <table >
 <tr>
   <td><img width="100%" alt="图2.4.1 获取目录内容截图（有内容）   " src="https://raw.githubusercontent.com/Jaxx9527/BitmapFileSystemOnLinux/refs/heads/main/img/2.4.1.png" />
@@ -39,14 +51,25 @@ dd if=/dev/zero of=/dev/ram0 bs=512 count=1280
 </td>
 </tr>
   <tr>
-    <td align="center">图2.4.1 获取目录内容截图（有内容）    </td>
-    <td align="center"> 图2.4.2 获取目录内容截图（无内容） 	</td>
+    <td align="center">图2.4.1 获取目录内容截图（非空目录）    </td>
+    <td align="center"> 图2.4.2 获取目录内容截图（空目录） 	</td>
   </tr>
 </table>
 图2.4.1和图2.4.2展示了，ramdisk内原本有内容时与无内容时获取目录内容函数执行结果。  
 
-![ 图2.5 实现创建文件及目录截图              ](https://raw.githubusercontent.com/Jaxx9527/BitmapFileSystemOnLinux/refs/heads/main/img/2.5.png)  
-图2.5 实现创建文件及目录截图              
+
+
+
+<table >
+<tr>
+  <td><img width="100%" alt="image" src="https://raw.githubusercontent.com/Jaxx9527/BitmapFileSystemOnLinux/refs/heads/main/img/2.5.png" />
+
+</tr>
+  <tr>
+    <td align="center"> 	  图2.5 实现创建文件及目录截图   </td>
+  </tr>
+</table>
+
 图2.5展示了，ramdisk创建文件及创建目录后，获取目录内容结果。  
 <table >
 <tr>
