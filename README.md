@@ -12,7 +12,7 @@ Linux系統上基於Bitmap的檔案管理系统
 ## 運行環境
 Ubuntu 14.04 LTS  
 gcc version 4.8.4  
-编译标准：C99  
+編譯標準：C99  
 
 ## 運行結果
 ```
