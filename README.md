@@ -14,7 +14,7 @@ Ubuntu 14.04 LTS
 gcc version 4.8.4  
 编译标准：C99  
 
-## 運行截圖
+## 運行結果
 ```
 sudo su
 modprobe brd rd_nr=1 rd_size=640
