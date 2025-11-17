@@ -28,11 +28,11 @@ Fig. 2.2.1 Shell commands for creating and initializing a RAM disk
 
 </tr>
   <tr>
-    <td align="center"> 	 Fig. 2.2.2创建及初始化ramdisk shell执行记录截图  
+    <td align="center"> 	 Fig. 2.2.2 Creating and initializing the ramdisk via shell commands
   </td>
   </tr>
 </table> 
-本系统未自带ramdisk设备(/dev/ram)，使用图2.2.1命令创建及初始化ramdisk，运行结果如图2.2.2所示。
+Since this system does not provide a built-in ramdisk device (/dev/ram), the ramdisk is created and initialized using the commands shown in Fig. 2.2.1. The execution result is shown in Fig. 2.2.2.    
 
 <table >
 <tr>
