@@ -40,24 +40,23 @@ Since this system does not provide a built-in ramdisk device (/dev/ram), the ram
 
 </tr>
   <tr>
-    <td align="center"> 	 Fig. 2.3 实现格式化截图   </td>
+    <td align="center"> 	 Fig. 2.3 Formatting implementation   </td>
   </tr>
 </table>   
-图2.3展示了，ramdisk内原本有内容，执行格式化后，内容被清除。  
+Fig. 2.3 show that the ramdisk originally contained data and after performing the format operation, the contents were cleared.  
 <table >
 <tr>
-  <td><img width="100%" alt="Fig. 2.4.1 获取目录内容截图（有内容）   " src="https://raw.githubusercontent.com/Jaxx9527/BitmapFileSystemOnLinux/refs/heads/main/img/2.4.1.png" />
+  <td><img width="100%" alt="Fig. 2.4.1 " src="https://raw.githubusercontent.com/Jaxx9527/BitmapFileSystemOnLinux/refs/heads/main/img/2.4.1.png" />
 </td>
-  <td><img width="100%" alt="Fig. 2.4.2 获取目录内容截图（无内容） " src="https://raw.githubusercontent.com/Jaxx9527/BitmapFileSystemOnLinux/refs/heads/main/img/2.4.2.png" />
+  <td><img width="100%" alt="Fig. 2.4.2 " src="https://raw.githubusercontent.com/Jaxx9527/BitmapFileSystemOnLinux/refs/heads/main/img/2.4.2.png" />
 </td>
 </tr>
   <tr>
-    <td align="center">Fig. 2.4.1 获取目录内容截图（非空目录）    </td>
-    <td align="center"> Fig. 2.4.2 获取目录内容截图（空目录） 	</td>
+    <td align="center">Fig. 2.4.1 Retrieving directory contents (non-empty)    </td>
+    <td align="center"> Fig. 2.4.2 Retrieving directory contents (empty) 	</td>
   </tr>
 </table>
-Fig. 2.4.1和Fig. 2.4.2展示了，ramdisk内原本有内容时与无内容时获取目录内容函数执行结果。  
-
+Fig. 2.4.1 and Fig. 2.4.2 show the execution results of the function for retrieving directory contents when the ramdisk contains data and when it is empty.
 
 
 
@@ -67,11 +66,11 @@ Fig. 2.4.1和Fig. 2.4.2展示了，ramdisk内原本有内容时与无内容时�
 
 </tr>
   <tr>
-    <td align="center"> 	  Fig. 2.5 实现创建文件及目录截图   </td>
+    <td align="center"> 	  Fig. 2.5 Implementation of creating files and directories   </td>
   </tr>
 </table>
 
-Fig. 2.5展示了，ramdisk创建文件及创建目录后，获取目录内容结果。  
+Fig. 2.5 shows the directory contents retrieved after creating a file and a directory on the ramdisk.  
 <table >
 <tr>
   <td><img width="100%" alt="image" src="https://raw.githubusercontent.com/Jaxx9527/BitmapFileSystemOnLinux/refs/heads/main/img/2.6.1.png" />
@@ -80,13 +79,13 @@ Fig. 2.5展示了，ramdisk创建文件及创建目录后，获取目录内容�
 </td>
 </tr>
   <tr>
-    <td align="center">Fig. 2.6.1 实现复制文件/目录截图                          </td>
-    <td align="center">     Fig. 2.6.2 实现复制文件截图	</td>
+    <td align="center">Fig. 2.6.1 Implementation of copying files and directories                      </td>
+    <td align="center">  Fig. 2.6.1 Implementation of copying files	</td>
   </tr>
 </table>
 
-图2.6.1展示了，复制文件及创建目录后，获取目录内容结果。  
-图2.6.2展示了，复制文件后文件内容成功被复制。  
+Fig. 2.6.1 shows that the directory contents retrieved after copying a file and creating a directory.
+Fig. 2.6.2 shows that after copying the file, its contents were successfully duplicated.
 
 <table >
 <tr>
@@ -96,13 +95,13 @@ Fig. 2.5展示了，ramdisk创建文件及创建目录后，获取目录内容�
 </td>
 </tr>
   <tr>
-    <td align="center">Fig. 2.7.1写入文件截图 </td>
-    <td align="center"> 	  Fig. 2.7.2 读取文件截图   </td>
+    <td align="center">Fig. 2.7.1  Writing to a file </td>
+    <td align="center"> 	  Fig. 2.7.2 Reading from a file   </td>
   </tr>
 </table>
 
                                      
-Fig. 2.7.1和Fig. 2.7.2展示了，写入文件与读取文件结果截图。  
+Fig. 2.7.1 and Fig. 2.7.2 show the results of writing to and reading from a file.  
 
 <table >
 <tr>
@@ -112,10 +111,10 @@ Fig. 2.7.1和Fig. 2.7.2展示了，写入文件与读取文件结果截图。
 </td>
 </tr>
   <tr>
-    <td align="center">Fig. 2.8.1 文件删除截图 </td>
-    <td align="center"> Fig. 2.8.2 目录删除截图	</td>
+    <td align="center">Fig. 2.8.1 File deletion </td>
+    <td align="center"> Fig. 2.8.2 Directory deletion	</td>
   </tr>
 </table>
 
     		       	 
-图2.8.1和图2.8.2展示了，文件或目录删除功能结果截图。
+Fig. 2.8.1 and Fig. 2.8.2 show that the results of deleting a file or a directory.
